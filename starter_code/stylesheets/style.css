@@ -8,3 +8,445 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* ///////////////////////// GENERAL ////////////////////////////// */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav, 
+header {
+    background-color: #540B51;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ///////////////////////// NAV ///////////////////////////////// */
+
+/* LEFT */
+
+nav {
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100vw;
+}
+
+.nav-left {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+.nav-list > li > a:link,
+.nav-list > li > a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-left > img {
+    height: 1.4rem;
+}
+
+/* RIGHT */
+
+.nav-right {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.nav-cta {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.2rem;
+}
+
+.btn-search,
+.btn-menu {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-cta a:link,
+.nav-cta a:visited {
+    text-decoration: none;
+}
+
+.btn-sign a {
+    color: #fff;
+}
+
+.btn-try a {
+    color: #540B51;
+    background-color: #fff;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* ///////////////////////// HEADER ///////////////////////////////// */
+
+header {
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    gap: 0.8rem;
+    padding-top: 4.8rem;
+}
+
+.header-text {
+    padding: 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.header-text > h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 2.3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.header-text > p {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.span-orange {
+    color: rgb(240, 163, 22);
+}
+
+.btn-header {
+    height: 2.2rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.box-btns-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.header-email {
+    color: #540B51;
+}
+
+.header-google {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    color: #fff;
+    background-color: #4285F4;
+    padding-left: 0.4rem;
+}
+
+.header-google > img {
+    position: absolute;
+    left: 3px ;
+    height: 1.6rem;
+    background-color: #fff;
+    padding: 0.2rem;
+    border-radius: 2px;
+}
+
+.header-img {
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-img > img {
+    /* max-width: 100%;
+    height: 100%; */
+    /* max-width: 100%; */
+    /* height: 16rem; */
+    /* max-width: 100%; */
+    max-width: 100%;
+    transform: scale(130%);
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    /* object-fit: none;
+    object-position: -20% 50%; */
+    /* transform: scale(0.5%); */
+}
+
+/* ///////////////////////// MAIN ///////////////////////////////// */
+
+main {
+    background-color: #F3EAE2;
+    
+    /* DOUBLE CHECK POSITION HERE */
+    /* margin-top: -1.4rem;
+    position: absolute */
+}
+
+/* FEATURED */
+
+.section-featured {
+    padding: 0 0.1rem;
+    
+}
+
+.section-featured p {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.6rem 0.8rem 1.2rem 0.8rem;
+}
+
+.box-featured > img {
+    height: 1.8rem;
+}
+
+.box-featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    padding-bottom: 1.6rem;
+}
+
+/* HOW */
+
+.how-team-img {
+    width: 20rem;
+}
+
+.section-how {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding-bottom: 2.4rem;
+}
+
+.work-img-box {
+    display: flex;
+    justify-content: end;
+}
+
+.how-txt-box {
+    padding: 0 1.2rem;
+}
+
+.how-txt-box > h2 {
+    font-size: 1.6rem;
+    letter-spacing: -1.2px;
+    margin-bottom: 0.8rem;
+}
+
+.how-txt-box > p {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.how-txt-box a:link,
+.how-txt-box a:visited {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #4285F4;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.arrow-right {
+    width: 0.9rem;
+}
+
+/* COMPANIES */
+
+.section-companies {
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-companies h3 {
+    font-size: 1.6rem;
+    letter-spacing: -0.4px;
+    padding: 3.2rem 3.2rem 1.2rem 3.2rem;
+}
+
+.section-companies p {
+    padding: 0 1.2rem;
+}
+
+.companies-btn-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 1.2rem;
+    padding-bottom: 3.2rem;
+}
+
+.btn-slack,
+.btn-sales {
+    text-transform: uppercase;
+    padding: 1rem 1.6rem;
+    border-radius: 6px;
+    border: 2px solid #540B51;
+    font-weight: 600;
+}
+
+.btn-slack {
+    background-color: #540B51;
+    color: #fff;
+}
+
+.btn-sales {
+    color: #540B51;
+    background-color: #fff;
+}
+
+.list-percentages {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-percentages span {
+    color: #540B51;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.text-percentages {
+    padding: 0.2rem 6.4rem 2rem 6.4rem !important;
+    font-weight: 600;
+}
+
+/* DIGITAL */
+
+.section-digital {
+    background-color: #540B51;
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    border-radius: 2000px 2000px / 0px 0px 300px 300px;
+}
+
+.section-digital h3 {
+    font-size: 1.6rem;
+    letter-spacing: -0.4px;
+    text-align: center;
+    color: #fff;
+    padding: 1.4rem 2.4rem 1.6rem 2.4rem;
+}
+
+.section-digital button {
+    text-transform: uppercase;
+    padding: 1rem 1.6rem;
+    border-radius: 6px;
+    border: 2px solid #540B51;
+    font-weight: 600;
+    margin: 0.4rem 1.2rem;
+}
+
+.btn-talk {
+    background-color: #540B51;
+    border: 2px solid #fff !important;
+    color: #fff;
+}
+
+.background-white {
+    background-color: #fff;
+}
+
+/* ///////////////////////// FOOTER ///////////////////////////////// */
+
+footer {
+    padding: 1.2rem;
+}
+
+.slack-logo {
+    height: 2rem;
+    margin-top: 2.4rem;
+}
+
+.footer-box-lists {
+    display: flex;
+    gap: 1.2rem;
+    margin: 2.4rem 0;
+    overflow: hidden;
+}
+
+.footer-box-lists ul {
+    list-style: none;
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-list-title {
+    font-weight: 600;
+}
+
+.footer-list-final {
+    margin-top: 1.6rem;
+    font-size: 0.6rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.footer-icons ion-icon {
+    width: 0.7rem;
+}
+
+.blue-slack {
+    color: #4285F4;
+}
+
+.footer-list-medias {
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+
+.footer-copyright {
+    margin: 1.6rem 0;
+    font-size: 0.6rem;
+}
+
